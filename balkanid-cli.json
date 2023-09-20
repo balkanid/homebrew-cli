@@ -1,0 +1,21 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/BalkanID/homebrew-cli/releases/download/v0.1.0/balkanid-cli_0.1.0_windows_amd64.zip",
+            "bin": [
+                "balkanid-cli.exe"
+            ],
+            "hash": "c4423e630a51154a97a438670252db4d84bb5c77b9342925d7ac9f4e1189101b"
+        },
+        "arm64": {
+            "url": "https://github.com/BalkanID/homebrew-cli/releases/download/v0.1.0/balkanid-cli_0.1.0_windows_arm64.zip",
+            "bin": [
+                "balkanid-cli.exe"
+            ],
+            "hash": "54803efcb39cdacc2892510191e8ce2925ae666c9ed369917e91848e392c6387"
+        }
+    },
+    "homepage": "https://www.balkan.id/",
+    "description": "Balkan ID CLI is a command line interface to extract entitlements of various platforms."
+}
