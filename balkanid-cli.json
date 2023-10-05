@@ -1,19 +1,19 @@
 {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.0/balkanid-cli_0.2.0_windows_amd64.zip",
+            "url": "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.1/balkanid-cli_0.2.1_windows_amd64.zip",
             "bin": [
                 "balkanid-cli.exe"
             ],
-            "hash": "5d429e574308835dd46e4f2fff5f374c642d96609540fd62407ebfdedec653ff"
+            "hash": "e6fd46f8cf5345f45d4243903263a7956025024b5af43dce28629094b8a21ab3"
         },
         "arm64": {
-            "url": "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.0/balkanid-cli_0.2.0_windows_arm64.zip",
+            "url": "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.1/balkanid-cli_0.2.1_windows_arm64.zip",
             "bin": [
                 "balkanid-cli.exe"
             ],
-            "hash": "c7184bc9744a96be1572703d04bec18f1e59b6f8bf6481952c5d5bb23d746d0f"
+            "hash": "27fd262b6676820a8e7a4f30eb4661038440e8529b329f594ca5eebdf4296198"
         }
     },
     "homepage": "https://www.balkan.id/",
