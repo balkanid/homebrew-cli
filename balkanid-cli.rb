@@ -5,20 +5,20 @@
 class BalkanidCli < Formula
   desc "Balkan ID CLI is a command line interface to extract entitlements of various platforms."
   homepage "https://www.balkan.id/"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.2/balkanid-cli_0.2.2_darwin_arm64.tar.gz"
-      sha256 "2d95c8eb391604b393c8c19980185ca5821eadf6e8fd889cd821879d90c17616"
+    if Hardware::CPU.intel?
+      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.3/balkanid-cli_0.2.3_darwin_amd64.tar.gz"
+      sha256 "e2338f4287a90e007843edf590c283cc7c74c033b115891a8a7d380c7b94f2ab"
 
       def install
         bin.install "balkanid-cli"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.2/balkanid-cli_0.2.2_darwin_amd64.tar.gz"
-      sha256 "1dbc1812dbb445aa2d3f67904e43126506a68632c5021361cc1035502e712d77"
+    if Hardware::CPU.arm?
+      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.3/balkanid-cli_0.2.3_darwin_arm64.tar.gz"
+      sha256 "45ce1877b75e0d355097259a4b7f0c1a77f671de22eba741407f9b94a56f9774"
 
       def install
         bin.install "balkanid-cli"
@@ -28,16 +28,16 @@ class BalkanidCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.2/balkanid-cli_0.2.2_linux_arm64.tar.gz"
-      sha256 "629c2a226bce2bd0d9d5e1726b0aa9f89837729ed2a5f47d84f7206f93f3792f"
+      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.3/balkanid-cli_0.2.3_linux_arm64.tar.gz"
+      sha256 "a92588a9ea01c5f4f7aad0bd9fda171d3e3166bbcff4d0cbeed0b7c9ab1cf9fb"
 
       def install
         bin.install "balkanid-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.2/balkanid-cli_0.2.2_linux_amd64.tar.gz"
-      sha256 "09d63d9a1edae4a2f0619b1df8e430ebae37ccea7eff0f48971aa844440c8db2"
+      url "https://github.com/BalkanID/homebrew-cli/releases/download/v0.2.3/balkanid-cli_0.2.3_linux_amd64.tar.gz"
+      sha256 "23e13feff0416ac27fb165a11484de97a368d449dc507549f7efe518d646fc17"
 
       def install
         bin.install "balkanid-cli"
