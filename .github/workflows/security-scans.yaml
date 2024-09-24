@@ -1,0 +1,24 @@
+name: Security Scans
+
+on:
+  push:
+    branches:
+      - main
+      - release-*
+  pull_request:
+    branches:
+      - release-*
+      - main
+  schedule:
+    - cron: '0 1 * * 0' # Run every Sunday at 1:00 AM
+
+jobs:
+  trivy-scan:
+    name: Trivy Scan
+    uses: balkanid/security-workflows/.github/workflows/trivy.yml@main
+    secrets: inherit
+
+  trufflehog-scan:
+    name: Trufflehog Secret Scan
+    uses: balkanid/security-workflows/.github/workflows/trufflehog.yml@main
+    secrets: inherit
